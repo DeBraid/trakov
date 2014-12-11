@@ -1,10 +1,17 @@
-# Mobile-First App for In-home Womens Spa Services
+# Re-build of Mobile-First App for In-home Womens Spa Services
 
 ## Built by:
 
 * [Derek Braid](http://cacheflow.ca)
 
-Now live [here](http://www.tracykovach.ca), version 1.0 October 2014.
+Old version is live [here](http://www.tracykovach.ca), version 1.0 October 2014, now upgrading to Meteor 1.0.
+
+Notes: 
+
+LESS issue 
+1. http://stackoverflow.com/questions/23206949/less-bootstrap-wont-compile 
+2. https://github.com/Nemo64/meteor-bootstrap
+
 
 TO DO: 
 
