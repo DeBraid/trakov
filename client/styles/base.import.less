@@ -1,0 +1,227 @@
+html {
+  height: 100%;
+}
+body {
+  
+  background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    color-stop(0, #95657b), 
+    color-stop(0.8, #eeb6a5)
+  );
+  background-image: -o-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -moz-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -webkit-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: -ms-linear-gradient(left top, #95657b 0%, #eeb6a5 50%);
+  background-image: linear-gradient(to left top, #95657b 0%, #eeb6a5 50%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Add in row and column centering
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#iron-router-progress {
+  background-color: @progress-background;
+  box-shadow: 0 0 5px @progress-shadow-color;
+}
+
+#iron-router-progress.spinner:before {
+    border-color : @progress-spinner-color;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 45px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  max-width: 33%;
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 400px) {
+  .featurette-image {
+    max-width: 66%;
+  }
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+  #nav a
+    {
+      position: relative;
+      display: inline-block;
+      color: #ffffff;
+      width: 1em;
+      height: 1em;
+      line-height: 0.9em;
+
+    }
+
+      #nav a.icon:before
+      {
+        padding-right: 0;
+      }
+    
+
+  #nav
+  {
+    text-align: center;
+    height: 6.25em;
+    margin: 4em 1em 1em 1em; 
+    cursor: default;
+  }
+  
+    #nav a
+    {
+      margin: 0 0.25em 0 0.25em;
+      opacity: 0.35;
+      outline: 0;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      -ms-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+    }
+    #nav a span {
+      opacity: 1;
+    }
+
+      #nav a:before
+      {
+        font-size: 0.8em;
+      }
+
+      #nav a:after
+      {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -0.75em;
+        margin-left: -0.5em;
+        border-bottom: solid 0em #ffffff;
+        border-left: solid 0.5em transparent;
+        border-right: solid 0.5em transparent;
+        -moz-transition: border-bottom-width .25s ease-in-out;
+        -webkit-transition: border-bottom-width .25s ease-in-out;
+        -o-transition: border-bottom-width .25s ease-in-out;
+        -ms-transition: border-bottom-width .25s ease-in-out;
+        transition: border-bottom-width .25s ease-in-out;
+      }
+    
+      #nav a span
+      {
+        display: block;
+        position: absolute;
+        /*background: #805BDE;*/
+        color: #805BDE;
+        top: -2.75em;
+        font-size: 0.3em;
+        height: 2.25em;
+        line-height: 2.25em;
+        left: 50%;
+        opacity: 1;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+        
+        /* Labels not wide enough? Increase its width below and set margin-left to ((width / 2) * -1) */
+        width: 5.5em;
+        margin-left: -2.75em;
+      }
+      
+        #nav a span:after
+        {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -0.4em;
+          left: 50%;
+          margin-left: -0.6em;
+          border-top: solid 0.6em #805BDE;
+          border-left: solid 0.6em transparent;
+          border-right: solid 0.6em transparent;
+        }
+
+      #nav a:hover
+      {
+        opacity: 1.0;
+      }
+
+        #nav a:hover span
+        {
+          opacity: 1.0;
+        } 
+      
+      #nav a.active
+      {
+        opacity: 1.0;
+      }
+
+        #nav a.active:after
+        {
+          border-bottom-width: 0.5em;
+        }
+
+
+.yielding {
+  opacity: 1; // value after the animate class got removed
+  transition: opacity 1200ms;
+  top: 50%;
+}
+.yielding.animate {
+  opacity: 0; // initial value
+}
+
+
+.btn-info {
+  background-color: #805BDE;
+  border-color: rgba(255, 255, 255, 0.5);
+  
+  &:hover {
+    background-color: rgba(251, 141, 196, 0.8);
+    border-color: #FFF;
+  };
+}
+

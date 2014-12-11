@@ -1,0 +1,23 @@
+<template name="contact">
+  <div class="container">
+    <div class="row">
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+          <img class="featurette-image img-circle pull-right" src="polish.png">
+          <h2 class="featurette-heading">Contact Tracy!  <span class="text-muted">Appointments by Request Only.</span></h2>
+          <p class="lead">Email: mstracykovach@gmail.com</p>
+          <p class="lead">Phone: 905 - 359 - 2493</p>
+          {{#Animate}}
+            <a href="{{pathFor 'pricing'}}">
+              <button type="submit" name="submit" class="btn btn-info btn-lg pull-right animated bounce">View Price List</button>
+            </a>
+          {{/Animate}}
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+  </div>
+</template>

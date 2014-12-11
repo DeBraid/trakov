@@ -1,0 +1,27 @@
+<template name="home">
+  <div class="container">
+    <div class="row">
+      <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+          <img class="featurette-image img-circle pull-left" src="girlswaxpot.png">
+          <h2 class="featurette-heading">The Mobile Spa By Tracy  <span class="text-muted"> In-home Professional Spa Services </span></h2>
+          <p class="lead">Get a full spa treatment from your living room.  Invite your friends for mani-pedi party.</p>
+
+          {{#Animate}}
+            <a href="{{pathFor 'pricing'}}">
+              <button type="submit" name="submit" class="btn btn-info btn-lg pull-right animated bounce">What Services Are Available?</button>
+            </a>
+          {{/Animate}}
+
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+    </div>
+  </div>
+</template>

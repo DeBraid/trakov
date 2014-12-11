@@ -1,0 +1,140 @@
+.row
+{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+ 
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-md-4
+{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width:33%;
+}
+.panel {
+  width:100%;
+  background-color : transparent;
+  border: none;
+}
+
+.panel-warning h1 {
+  text-shadow: 3px 3px 3px #FAEBCC;
+}
+
+.panel-warning .price {
+  color: #8A6D3B;
+}
+.panel-success .price {
+  color: #3C763D;
+}
+
+.panel-info .service-heading,
+.panel-info .price {
+  color: rgb(169, 14, 92);
+}
+
+.panel-success h1 {
+  text-shadow: 3px 3px 3px #D6E9C6;
+}
+
+.panel-info h1 {
+  text-shadow: 3px 3px 3px #BCE8F1;
+}
+
+.price {
+  line-height: 2em;
+  text-align: center;
+  border-radius: 0.2em;
+}
+
+.fa {
+  font-size: 0.8em;
+}
+
+#request-appt {
+  margin: 1em 0 1em 0;
+}
+
+.panel > .panel-heading {
+ background-color : transparent; 
+}
+
+.price {
+  color:#323030;
+  text-align:center;
+  font-size:24px;
+  padding:10px;
+  
+  text-shadow: /* Simulating Text Stroke */
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+  
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  
+  background: rgba(0,0,0,0.25);
+
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+  
+  box-shadow: 
+        0 2px 5px rgba(0,0,0,0.5), /* Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+
+  margin: 40px;
+  background-color : transparent; 
+}
+
+.service-heading {
+  text-align: center;
+  text-shadow: 1px 1px 1px #FFF;
+}
+@media (max-width: 625px) {
+  .col-md-4 {
+    width: 48%;
+  }
+  .price {
+    line-height: 1.25em;
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 430px) {
+  .price {
+    line-height: 1em;
+    font-size: 1.25em;
+    margin: 25px; 
+  }
+  .panel-body {
+    padding: 1px;
+  }
+}
